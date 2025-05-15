@@ -9,13 +9,22 @@
       name="description"
       content="FracGM is a solver for Geman-McClure robust estimation with fast convergence rate and well outlier rejection capability. We demonstrate FracGM on registration problems."
     />
-    <meta name="keywords" content="FracGM, fracgm, robust estimation, point cloud registration" />
+    <meta
+      name="keywords"
+      content="FracGM, fracgm, robust estimation, point cloud registration"
+    />
     <meta name="author" content="Bang-Shien Chen" />
     <meta name="robots" content="index, follow" />
 
     <meta property="og:title" content="FracGM project page" />
-    <meta property="og:description" content="FracGM is a solver for Geman-McClure robust estimation with fast convergence rate and well outlier rejection capability. We demonstrate FracGM on registration problems." />
-    <meta property="og:image" content="https://dgbshien.com/FracGM/assets/image/algorithm.webp" />
+    <meta
+      property="og:description"
+      content="FracGM is a solver for Geman-McClure robust estimation with fast convergence rate and well outlier rejection capability. We demonstrate FracGM on registration problems."
+    />
+    <meta
+      property="og:image"
+      content="https://dgbshien.com/FracGM/assets/image/algorithm.webp"
+    />
     <meta property="og:url" content="https://dgbshien.com/FracGM/" />
     <meta property="og:type" content="website" />
 
@@ -217,14 +226,14 @@
         </span>
         <p>
           The Geman-McClure robust estimation problem is a special case of
-          fractional program, where the numerators and denominator are all
+          fractional program, where the numerators and denominators are all
           convex (assuming that all square of residuals are convex). We
           introduce upper bound variables and Lagrange multipliers to
           reformulate the fractional program to a dual problem. We then
-          alternatively solves the dual problem by a convex program and a linear
-          system. Note that the linear system are part of the KKT conditions of
+          alternatively solve the dual problem by a convex program and a linear
+          system. Note that the linear system is part of the KKT conditions of
           the convex dual problem. In addition, we develop conditionally global
-          optimality for the proposed solver with the help of fractional
+          optimality for the propose solver with the help of fractional
           programming techniques.
         </p>
         <span>
@@ -236,12 +245,12 @@
         </span>
         <p>
           We demonstrate FracGM on point cloud registration problems. In order
-          to apply FracGM, we relax the rotational constraint to align our
-          assumptions (all square of residuals are convex). The convex dual
-          problem is now a convex quadratic program with linear constraints
-          only. Therefore, both the convex program and the linear system has
+          to apply FracGM, we first relax the rotational constraint to align our
+          assumptions (all square of residuals are convex). The dual problem is
+          now a convex quadratic program with linear constraints only.
+          Therefore, both the convex program and the linear system has
           closed-form solutions. At last, since the solution does not satisfy
-          the rotational constraint, we project the solutoin back to the
+          the rotational constraint, we project the solution back to the
           rotation group by singular value decomposition.
         </p>
       </div>
@@ -254,14 +263,14 @@
           <img src="assets/image/bunny.webp" alt="bunny" class="img" />
         </span>
         <p class="label">
-          (a) Point Cloud Registration with Synthetic Bunny Dataset. FracGM is
+          (a) Point cloud registration with synthetic Bunny dataset. FracGM is
           truly robust even with extreme outlier rates.
         </p>
         <span>
           <img src="assets/image/3dmatch.webp" alt="3dmatch" class="img" />
         </span>
         <p class="label">
-          (b) Point Cloud Registration with 3DMatch Dataset. FracGM achieves the
+          (b) Point cloud registration with 3DMatch dataset. FracGM achieves the
           best results in 13 out of 18 outcomes.
         </p>
       </div>
